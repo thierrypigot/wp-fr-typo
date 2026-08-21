@@ -1,7 +1,7 @@
 # Glossaire officiel WordPress fr_FR
 
 > Source : export officiel de https://translate.wordpress.org/locale/fr/default/glossary/
-> **602 termes** — Dernière mise à jour : **30/03/2026**.
+> **604 termes** — Dernière mise à jour : **21/08/2026**.
 > Maintenu par l'équipe Polyglots WordPress Francophone.
 
 ## Règles d'usage
@@ -586,6 +586,7 @@
 | `sitemap.xml` | sitemap.xml | noun | Ne pas traduire |
 | `size` | taille | noun |  |
 | `sizes` | tailles | noun |  |
+| `skills` | compétences | noun |  |
 | `skin` | habillage | noun |  |
 | `Skip` | Passer | verb |  |
 | `Skip to` | Aller à/au | verb |  |
@@ -710,6 +711,7 @@
 | `VideoPress` | VideoPress | noun |  |
 | `view` | vue | noun |  |
 | `view` | voir | verb |  |
+| `viewport` | zone d’affichage | noun |  |
 
 ## W
 
