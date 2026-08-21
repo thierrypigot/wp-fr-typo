@@ -348,7 +348,7 @@ ATTENTION : Ces termes sont OBLIGATOIRES. Toute déviation est un motif de reje
 | Spacer | espacement |
 | Separator | séparateur |
 | Embed | incorporation |
-| Shortcode | shortcode (invariable) |
+| Shortcode | code court |
 | Custom HTML | HTML personnalisé |
 | theme.json | theme.json (ne pas traduire) |
 
