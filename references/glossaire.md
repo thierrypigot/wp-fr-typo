@@ -1,7 +1,7 @@
 # Glossaire officiel WordPress fr_FR
 
 > Source : export officiel de https://translate.wordpress.org/locale/fr/default/glossary/
-> **602 termes** — Dernière mise à jour : **30/03/2026**.
+> **604 termes** — Dernière mise à jour : **19/08/2026**.
 > Maintenu par l'équipe Polyglots WordPress Francophone.
 
 ## Règles d'usage
@@ -29,8 +29,8 @@
 | `addon` | module | noun | module complémentaire (si possible dans UI) |
 | `admin bar` | barre d’administration | noun |  |
 | `admin panel` | panneau d’administration | noun |  |
-| `administrator` | administrateur/administratrice | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. e |
-| `administrators` | administrateurs/administratrices | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. e |
+| `administrator` | administrateur/administratrice | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. ex. : « l’administrateur et l’administratrice peuvent se connecter » |
+| `administrators` | administrateurs/administratrices | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. ex. : « les administrateurs et administratrices peuvent se connecter » |
 | `affiliate marketing` | marketing d’affiliation | expression |  |
 | `After the Deadline` | Après la date limite | noun |  |
 | `AI` | IA | noun | Intelligence artificielle |
@@ -39,7 +39,7 @@
 | `allowed` | autorisé | adverb |  |
 | `allows you` | vous permet de | verb |  |
 | `An error occurred` | Une erreur s‘est produite | noun |  |
-| `Analytics` | Statistiques | noun | ou « Mesures d'audience ».  « Outil de statistiques » / « Outil de mesure d’audience » s‘il s'agit de l‘outil/service. |
+| `Analytics` | Statistiques | noun | ou « Mesures d'audience ». « Outil de statistiques » / « Outil de mesure d’audience » s‘il s'agit de l‘outil/service. |
 | `API key` | Clé de l’API | noun |  |
 | `Appearance` | Apparence | noun | UI Menu |
 | `archive` | archive | noun |  |
@@ -53,8 +53,8 @@
 | `attachment` | fichier joint | noun |  |
 | `attendee` | participant/participante | noun |  |
 | `audio` | audio | noun | [np] |
-| `author` | auteur/autrice | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. e |
-| `authors` | auteurs/autrices | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. e |
+| `author` | auteur/autrice | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. ex. : « l’auteur ou l’autrice de l’extension » |
+| `authors` | auteurs/autrices | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. ex. : « les auteurs ou autrices peuvent modifier des publications » |
 
 ## B
 
@@ -131,8 +131,8 @@
 | `Colorset` | Jeu de couleurs | noun |  |
 | `comment` | commenter | verb | [np] |
 | `comment` | commentaire | noun | [np] |
-| `commiter` | commiteur/commiteuse | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. e |
-| `commiters` | commiteurs/commiteuses | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. e |
+| `commiter` | commiteur/commiteuse | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. ex. : « le commiteur ou la commiteuse à la dernière version de WordPress » |
+| `commiters` | commiteurs/commiteuses | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. ex. : « les commiteurs ou les commiteuses à la dernière version de WordPress » |
 | `company` | entreprise | noun |  |
 | `completed` | terminé | verb |  |
 | `computer` | ordinateur | noun |  |
@@ -140,8 +140,8 @@
 | `constant` | constante | noun | [np] |
 | `Consumer Key` | Clé client | noun |  |
 | `content marketing` | marketing de contenu | expression |  |
-| `contributor` | contributeur/contributrice | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. e |
-| `contributors` | contributeurs/contributrices | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. e |
+| `contributor` | contributeur/contributrice | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. ex. : « le contributeur ou la contributrice à la dernière version de WordPress » |
+| `contributors` | contributeurs/contributrices | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. ex. : « les contributeurs ou les contributrices à la dernière version de WordPress » |
 | `conversion rate` | taux de conversion | expression |  |
 | `Cookie` | Cookie | noun | Browser cookie |
 | `core` | cœur | noun | P. ex. le cœur WordPress |
@@ -180,8 +180,8 @@
 | `desktop` | ordinateur | noun |  |
 | `desktop application` | application bureautique | expression | ou application de bureau |
 | `desktop folder` | dossier bureau | expression |  |
-| `developer` | développeur/développeuse | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. e |
-| `developers` | développeurs/développeuses | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. e |
+| `developer` | développeur/développeuse | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. ex. : « le développeur ou la développeuse de l’extension » |
+| `developers` | développeurs/développeuses | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. ex. : « les développeurs ou les développeuses de l’extension » |
 | `device` | appareil | noun |  |
 | `digital` | numérique | noun |  |
 | `dimension` | dimension | noun |  |
@@ -206,8 +206,8 @@
 | `edit` | modifier | verb |  |
 | `editing` | modification | noun |  |
 | `editor` | éditeur | noun | Outil d’édition (p. ex. éditeur visuel, éditeur de thème, éditeur d’extension) |
-| `editor` | éditeur/éditrice | noun | User role group. Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans  |
-| `editors` | éditeurs/éditrices | noun | User role group. Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans  |
+| `editor` | éditeur/éditrice | noun | User role group. Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. ex. : « l’éditeur ou l’éditrice de publications » |
+| `editors` | éditeurs/éditrices | noun | User role group. Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. ex. : « les éditeurs ou les éditrices de publications » |
 | `edits` | modifications | noun |  |
 | `email` | e-mail | noun |  |
 | `email address` | adresse e-mail | noun |  |
@@ -296,7 +296,7 @@
 | `hook` | crochet | noun |  |
 | `hook` | point d’accroche | noun |  |
 | `host` | hébergeur | noun |  |
-| `host` | hôte | noun | Lorsqu’il s’agit du serveur lui-même ou que le terme est associé aux informations de connexion à un serveur (port, usern |
+| `host` | hôte | noun | Lorsqu’il s’agit du serveur lui-même ou que le terme est associé aux informations de connexion à un serveur (port, username ou password). |
 | `hosting provider` | fournisseur d’hébergement | noun |  |
 | `hover` | survol | noun |  |
 | `Howdy` | Bonjour | noun |  |
@@ -423,7 +423,7 @@
 
 | Anglais | Français | Nature | Notes |
 |---------|----------|--------|-------|
-| `off` | inactif | adjective | désactiver (pour les boutons d’action, type on/off) éventuellement il est possible d’accorder en genre et en nombre selo |
+| `off` | inactif | adjective | désactiver (pour les boutons d’action, type on/off) éventuellement il est possible d’accorder en genre et en nombre selon le contexte |
 | `offset` | décalage | noun |  |
 | `older post` | publication plus ancienne | noun |  |
 | `only` | uniquement | noun | plutôt que seulement |
@@ -475,7 +475,7 @@
 | `Polldaddy` | Polldaddy | noun |  |
 | `popup` | fenêtre surgissante | noun | fenêtre contextuelle en fonction du type |
 | `popups` | fenêtres surgissantes | noun | fenêtres contextuelles en fonction du type |
-| `post` | publication | noun | Utiliser le terme "article" lorsque "post" ne correspond pas à un élément générique (ensemble des articles, pages ou typ |
+| `post` | publication | noun | Utiliser le terme "article" lorsque "post" ne correspond pas à un élément générique (ensemble des articles, pages ou types de publication personnalisé). |
 | `post` | publier | verb |  |
 | `post format` | format de publication | noun |  |
 | `post status` | état de la publication | noun |  |
@@ -586,6 +586,7 @@
 | `sitemap.xml` | sitemap.xml | noun | Ne pas traduire |
 | `size` | taille | noun |  |
 | `sizes` | tailles | noun |  |
+| `skills` | compétences | noun |  |
 | `skin` | habillage | noun |  |
 | `Skip` | Passer | verb |  |
 | `Skip to` | Aller à/au | verb |  |
@@ -689,15 +690,15 @@
 | `url` | URL | noun |  |
 | `URL` | URL | noun | URL au pluriel |
 | `user` | compte | noun |  |
-| `user` | utilisateur/utilisatrice | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. e |
-| `user` | internaute | noun | Le terme « internaute » fait référence à des visiteurs du site, à utiliser pour la partie publique du site ou ce qui la  |
+| `user` | utilisateur/utilisatrice | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. ex. : « L’utilisateur ou l’utilisatrice de l’extension » |
+| `user` | internaute | noun | Le terme « internaute » fait référence à des visiteurs du site, à utiliser pour la partie publique du site ou ce qui la concerne |
 | `user agent` | agent utilisateur | noun |  |
 | `user friendly` | simple/simple d’utilisation | noun |  |
 | `user role` | rôle du compte | noun |  |
 | `username` | identifiant | noun |  |
-| `users` | utilisateurs/utilisatrices | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. e |
+| `users` | utilisateurs/utilisatrices | noun | Les termes peuvent être séparés par une barre oblique « / » dans le BO mais doivent être combinés dans les phrases. P. ex. : « L’utilisateur ou l’utilisatrice de l’extension » |
 | `users` | comptes | noun |  |
-| `users` | internautes | noun | Le terme « internautes » fait référence à des visiteurs du site, à utiliser pour la partie publique du site ou ce qui la |
+| `users` | internautes | noun | Le terme « internautes » fait référence à des visiteurs du site, à utiliser pour la partie publique du site ou ce qui la concerne |
 
 ## V
 
@@ -710,6 +711,7 @@
 | `VideoPress` | VideoPress | noun |  |
 | `view` | vue | noun |  |
 | `view` | voir | verb |  |
+| `viewport` | zone d’affichage | noun |  |
 
 ## W
 

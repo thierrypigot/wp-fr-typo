@@ -1,0 +1,33 @@
+{
+  "name": "Monthly WP FR glossary update",
+  "description": "On the 10th of each month, refresh the official WordPress French glossary and open a PR if anything changed.",
+  "workflow": {
+    "triggers": [
+      {
+        "cron": {
+          "cron": "0 9 10 * *"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "slack": {
+          "channel": "<PUBLIC_SLACK_CHANNEL_ID>"
+        }
+      }
+    ],
+    "prompts": [
+      "Fetch the official French WordPress glossary from https://translate.wordpress.org/locale/fr/default/glossary/.\n\nRebuild references/glossaire.md in the existing format: header with term count and last-update date, the usage-rules section (keep it), then A–Z tables with columns Anglais | Français | Nature | Notes. Prefer the official export or structured page data over noisy HTML chrome.\n\nAlso sync the glossary date and term count in SKILL.md and README.md wherever those stamps or badges appear.\n\nIf nothing meaningful changed, do not open a pull request. If Slack is connected, post a short \"no changes\" note.\n\nIf terms changed, open a pull request summarizing added, updated, and removed entries. If Slack is connected, post a short status with the PR link and counts."
+    ],
+    "model": "",
+    "memoryEnabled": true,
+    "agentOptions": {
+      "skipInstall": false
+    },
+    "gitConfig": {
+      "repo": "Your wp-fr-typo fork repo",
+      "branch": "main"
+    }
+  },
+  "_comment": "Template only. Cursor does not import this file. Replace <PUBLIC_SLACK_CHANNEL_ID> (C… / G…) in the editor, or drop the slack action if unused. No tokens or webhook secrets belong here."
+}

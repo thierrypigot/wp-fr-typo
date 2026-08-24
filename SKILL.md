@@ -11,13 +11,14 @@ description: >
   Ce skill est aussi utile pour vérifier ou corriger une traduction française existante.
 ---
 
-> **Version du glossaire** : 30/03/2026 — Source : export officiel `translate.wordpress.org/locale/fr/default/glossary/` (602 termes).
+> **Version du glossaire** : 19/08/2026 — Source : export officiel `translate.wordpress.org/locale/fr/default/glossary/` (604 termes).
 
 # Skill : Traduction WordPress FR -- Typographie + Glossaire officiel
 
 Traduction conforme à 100% aux règles Polyglots WordPress FR :
 - Règles typo : https://fr.wordpress.org/team/handbook/polyglots/les-regles-typographiques-utilisees-pour-la-traduction-de-wp-en-francais/
 - Glossaire : https://translate.wordpress.org/locale/fr/default/glossary/
+- Glossaire format CSV: https://translate.wordpress.org/locale/fr/default/glossary/-export/
 
 ---
 
@@ -25,12 +26,13 @@ Traduction conforme à 100% aux règles Polyglots WordPress FR :
 
 Ordre impératif :
 
-1. Identifier et remplacer tous les termes du glossaire (section 3 et `references/glossaire.md`) dans le texte source.
-2. Traduire le reste en français courant, voix active, phrases courtes. Appliquer la hiérarchie épicène (section 2.10) : neutre > combiné > point médian.
-3. Appliquer toutes les règles typographiques (section 2).
-4. Passer la checklist (section 4) point par point.
-5. Livrer le texte final prêt à copier-coller dans GlotPress.
-6. Signaler tout choix non évident (terme conservé, épicène retenu, etc.).
+1. Commence par Pull le repo pour etre a jour.
+2. Identifier et remplacer tous les termes du glossaire (section 3 et `references/glossaire.md`) dans le texte source.
+3. Traduire le reste en français courant, voix active, phrases courtes. Appliquer la hiérarchie épicène (section 2.10) : neutre > combiné > point médian.
+4. Appliquer toutes les règles typographiques (section 2).
+5. Passer la checklist (section 4) point par point.
+6. Livrer le texte final prêt à copier-coller dans GlotPress.
+7. Signaler tout choix non évident (terme conservé, épicène retenu, etc.).
 
 ---
 
@@ -75,10 +77,15 @@ OBLIGATOIRE. Voir section 6 pour les contraintes d’encodage spécifiques aux f
 
 Résultat attendu : << espace-insécable texte espace-insécable >>
 
-#### Pas d’espace avant ni apres
+#### Pas d’espace avant ni après
 | Signe | Remarque |
 |-------|----------|
-| Barre oblique / | Exception : espace de chaque côté si l’un des membres contient un tiret ou expression longue. |
+| Barre oblique / | Aucune espace avant ni après |
+
+Correct : Local/Environnement de test -- Oui/Non -- Précédent/Suivant
+Incorrect : Local / Environnement de test (espaces autour de /)
+
+Exception : une espace avant ET après UNIQUEMENT si l’un des éléments est un nom composé avec tiret ou une expression longue, pour la lisibilité (ex. : astuce / aide à l’utilisation). Ne pas appliquer cette exception aux libellés d’alternatives (Local/Staging, Oui/Non, etc.).
 
 ---
 
@@ -190,7 +197,7 @@ Règles du point médian :
 ## 3. GLOSSAIRE OFFICIEL WORDPRESS FR
 
 Source : https://translate.wordpress.org/locale/fr/default/glossary/
-Glossaire complet local : `references/glossaire.md` (602 termes avec nature grammaticale et notes).
+Glossaire complet local : `references/glossaire.md` A utiliser en priorité.
 ATTENTION : Ces termes sont OBLIGATOIRES. Toute déviation est un motif de rejet.
 
 ### 3.1 Règles générales
@@ -219,8 +226,8 @@ ATTENTION : Ces termes sont OBLIGATOIRES. Toute déviation est un motif de reje
 | `dashboard` | **Tableau de bord** | dashboard (majuscule à Tableau) |
 | `media library` | **médiathèque** | bibliothèque de médias |
 | `featured image` | **image mise en avant** | image à la une |
-| `template` | **gabarit** (FSE/site editor) — **modèle de page** (classique) | template, gabarit seul hors FSE |
-| `template part` | **partie de gabarit** | élément de modèle |
+| `template` | **modèle** (FSE/site editor) — **modèle de page** (classique) | template, modèle seul hors FSE |
+| `template part` | **élément de modèle** | partie de gabarit |
 | `pattern` / `block pattern` | **composition** | motif toléré si non-UI |
 | `block theme` | **thème basé sur des blocs** | thème de blocs si manque de place |
 | `full site editing` / `FSE` | **éditeur de site** / **édition de site** | |
@@ -333,8 +340,8 @@ ATTENTION : Ces termes sont OBLIGATOIRES. Toute déviation est un motif de reje
 |---------|-------------------|
 | Block | bloc |
 | Pattern | composition |
-| Template | gabarit |
-| Template part | partie de gabarit |
+| Template | modèle |
+| Template part | partie de modèle |
 | Global styles | styles globaux |
 | Style variation | variation de style |
 | Site editor | éditeur de site |
@@ -348,7 +355,7 @@ ATTENTION : Ces termes sont OBLIGATOIRES. Toute déviation est un motif de reje
 | Spacer | espacement |
 | Separator | séparateur |
 | Embed | incorporation |
-| Shortcode | shortcode (invariable) |
+| Shortcode | code court (invariable) |
 | Custom HTML | HTML personnalisé |
 | theme.json | theme.json (ne pas traduire) |
 
@@ -455,6 +462,7 @@ Balises HTML dans une chaîne (<strong>, <a href="...">) : NE JAMAIS modifier.
 - [ ] Espace insécable avant : ; ? ! >> % et unités
 - [ ] Espace insécable après <<
 - [ ] Pas d’espace avant . , … ) ]
+- [ ] Pas d’espace autour de la barre oblique / (Local/Environnement de test, pas Local / Environnement de test)
 - [ ] Pas de majuscules inutiles (calque de l’anglais)
 - [ ] Majuscules accentuées (É accent aigu, À accent grave, etc.)
 - [ ] Séparateur décimal = virgule
@@ -519,6 +527,7 @@ Balises HTML dans une chaîne (<strong>, <a href="...">) : NE JAMAIS modifier.
 | The administrator has been notified. | La personne chargée de l’administration a été notifiée. |
 | Contributors and Authors | Les contributeurs et contributrices, et les auteurs et autrices |
 | User (en-tête de colonne) | Utilisateur·rice |
+| Local / Staging | Local/Environnement de test |
 
 ---
 

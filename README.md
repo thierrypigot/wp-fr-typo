@@ -6,24 +6,25 @@
   <img src="https://img.shields.io/badge/Claude%20Code-Skill-5865F2?style=flat-square&logo=anthropic&logoColor=white" alt="Claude Code Skill"/>
   <img src="https://img.shields.io/badge/WordPress-6.0%2B-0073aa?style=flat-square&logo=wordpress&logoColor=white" alt="WordPress 6.0+"/>
   <img src="https://img.shields.io/badge/Polyglots%20FR-Conforme-00a32a?style=flat-square" alt="Polyglots FR Conforme"/>
-  <img src="https://img.shields.io/badge/Glossaire-602%20termes-f0b849?style=flat-square" alt="Glossaire 602 termes"/>
+  <img src="https://img.shields.io/badge/Glossaire-604%20termes-f0b849?style=flat-square" alt="Glossaire 604 termes"/>
   <img src="https://img.shields.io/badge/Licence-GPL%20v2%2B-%23276749?style=flat-square" alt="Licence GPL v2+"/>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Glossaire%20mis%20à%20jour%20le-31%2F03%2F2026-ff6b35?style=flat-square" alt="Glossaire mis à jour le 31/03/2026"/>
+  <img src="https://img.shields.io/badge/Glossaire%20mis%20à%20jour%20le-19%2F08%2F2026-ff6b35?style=flat-square" alt="Glossaire mis à jour le 19/08/2026"/>
 </p>
 
 > [!NOTE]
-> **Version du glossaire intégré : 31/03/2026**
+> **Version du glossaire intégré : 19/08/2026**
 > Le glossaire officiel WordPress FR ([translate.wordpress.org](https://translate.wordpress.org/locale/fr/default/glossary/)) est mis à jour régulièrement par l'équipe Polyglots. Si tu constates un écart entre ce skill et le glossaire en ligne, la version en ligne fait foi. N'hésite pas à [ouvrir une issue](https://github.com/thierrypigot/wp-fr-typo/issues) pour signaler un terme à mettre à jour.
 
+> Cursor AUtomation mets a jour automatiquement le glossaire chaque 10 du mois ! 
 ---
 
 > **Vous soumettez une traduction sur GlotPress. Refusée.**
 > Apostrophe droite. Espace insécable manquante. Terme hors glossaire…
 
-Les règles de l'équipe **Polyglots WordPress Francophone** sont strictes, et pour une bonne raison : la cohérence de l'interface WordPress en français en dépend. Mais les maîtriser toutes simultanément (602 termes officiels, typographie, encodage .po, écriture épicène…) relève du parcours du combattant.
+Les règles de l'équipe **Polyglots WordPress Francophone** sont strictes, et pour une bonne raison : la cohérence de l'interface WordPress en français en dépend. Mais les maîtriser toutes simultanément (604 termes officiels, typographie, encodage .po, écriture épicène…) relève du parcours du combattant.
 
 **wp-fr-typo** est un skill [Claude Code](https://claude.ai/code) qui applique automatiquement l'intégralité de ces règles à chaque traduction.
 
@@ -52,7 +53,7 @@ Les règles de l'équipe **Polyglots WordPress Francophone** sont strictes, et p
 
 ## Fonctionnalités
 
-- **Glossaire officiel intégré** : 602 termes issus de [translate.wordpress.org](https://translate.wordpress.org/locale/fr/default/glossary/)
+- **Glossaire officiel intégré** : 604 termes issus de [translate.wordpress.org](https://translate.wordpress.org/locale/fr/default/glossary/)
 - **Typographie française complète** : apostrophes courbes, espaces insécables, guillemets « », points de suspension U+2026, majuscules accentuées
 - **Fichiers .po / GlotPress** : encodage UTF-8 strict, variables gettext intactes, aucun artefact `\uXXXX`
 - **Garde-fous intelligents** : le skill signale ses doutes avec des alternatives plutôt que de choisir silencieusement
