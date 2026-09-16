@@ -96,7 +96,15 @@ Le skill analyse les chaînes existantes, corrige les erreurs typographiques et 
 > **Ne pas sauter cette étape.**
 > Parcourir le fichier `.po` généré, vérifier les blocs `[DOUTE]` signalés, contrôler les chaînes à contexte spécifique (noms propres, contenu marketing, formulations épicènes).
 
-Ouvre le fichier dans [Poedit](https://poedit.net/), VS Code ou tout éditeur texte, et valide chaque traduction produite avant de soumettre.
+**Relecture indépendante (automatique).** Pour toute traduction destinée à translate.wordpress.org ou à l'interface d'admin d'un dev client, le skill fait relire le résultat par l'agent `wp-fr-translation-reviewer` (`~/.claude/agents/`), qui travaille dans un contexte vierge : il ne voit que le source, la traduction, le glossaire et le contexte. Il lance d'abord le contrôle mécanique `scripts/check_fr.py` (typographie, termes interdits, variables gettext, balises HTML, glossaire), puis relit le sens (contresens, cohérence des termes, longueur). Il renvoie un verdict `CONFORME` ou `NON CONFORME` et un tableau des écarts, sans rien corriger. Le rapport est joint à la livraison. Voir la section 10 du `SKILL.md`.
+
+Contrôle mécanique seul, sans agent :
+
+```bash
+PYTHONIOENCODING=utf-8 python ~/.claude/skills/wp-fr-typo/scripts/check_fr.py --po fichier.po --mode polyglots
+```
+
+Ouvre ensuite le fichier dans [Poedit](https://poedit.net/), VS Code ou tout éditeur texte, et valide chaque traduction produite avant de soumettre. La relecture par l'agent est un pré-filtre, pas un remplacement de la relecture humaine.
 
 ---
 
@@ -115,6 +123,14 @@ De retour sur translate.wordpress.org, ouvre **Import Translations**, choisis to
 ```bash
 npx skills add thierrypigot/wp-fr-typo
 ```
+
+**Agent de relecture (optionnel mais recommandé).** L'agent `wp-fr-translation-reviewer` ne fait pas partie du dossier du skill : Claude Code charge les agents depuis `~/.claude/agents/`. Copier le fichier une fois après l'installation :
+
+```bash
+cp ~/.claude/skills/wp-fr-typo/agents/wp-fr-translation-reviewer.md ~/.claude/agents/
+```
+
+L'agent est pris en compte à la session suivante. Le script `scripts/check_fr.py` nécessite Python 3.
 
 ## Mise à jour du skill
 

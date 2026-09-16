@@ -33,6 +33,17 @@ Ordre impératif :
 5. Passer la checklist (section 4) point par point.
 6. Livrer le texte final prêt à copier-coller dans GlotPress.
 7. Signaler tout choix non évident (terme conservé, épicène retenu, etc.).
+8. Faire relire par l’agent `wp-fr-translation-reviewer` quand la destination l’exige (section 10), corriger les écarts bloquants, relancer une fois au maximum, puis joindre le rapport de relecture à la livraison.
+
+### 1.1 Destination du texte (à déterminer AVANT de traduire)
+
+| Destination | Mode de relecture | Relecture par l’agent |
+|-------------|-------------------|-----------------------|
+| translate.wordpress.org (extension ou thème du dépôt officiel) | `polyglots` | **Obligatoire.** Tout écart au glossaire ou à la typographie sera rejeté par l’équipe Polyglots. |
+| Interface d’admin d’un dev client (écran de réglages, page d’options, bloc custom, notices, libellés de champs) | `admin-client` | **Obligatoire.** L’admin du site voit ces chaînes à côté de celles de WordPress, la cohérence des termes est impérative. |
+| Contenu front, marketing, e-mail, documentation client | aucun | Sur demande seulement. |
+
+Si la destination n’est pas évidente, demander à l’utilisateur avant de traduire.
 
 ---
 
@@ -235,7 +246,7 @@ ATTENTION : Ces termes sont OBLIGATOIRES. Toute déviation est un motif de reje
 | `query loop` | **boucle de requête** | |
 | `customize` | **personnaliser** | customiser |
 | `Customizer` | **Outil de personnalisation** | |
-| `sidebar` | **colonne latérale** | barre latérale |
+| `sidebar` | **barre latérale** | colonne latérale |
 | `tag` (taxonomie) | **étiquette** | tag |
 | `tag` (HTML) | **balise** | |
 | `slug` | **slug** | identifiant normalisé (nicename) |
@@ -281,7 +292,7 @@ ATTENTION : Ces termes sont OBLIGATOIRES. Toute déviation est un motif de reje
 | Panel | panneau |
 | Settings | réglages |
 | General Settings | réglages généraux |
-| Sidebar | colonne latérale |
+| Sidebar | barre latérale |
 | Widget area | zone de widgets |
 | Block | bloc |
 | Block editor | éditeur de blocs |
@@ -678,3 +689,40 @@ Termes spécifiques à ce projet, prioritaires sur les valeurs par défaut.
 | Anglais | Français retenu | Contexte / Note |
 |---------|-----------------|-----------------|
 ```
+
+---
+
+## 10. RELECTURE INDÉPENDANTE (agent `wp-fr-translation-reviewer`)
+
+La checklist de la section 4 est appliquée par le traducteur, donc jamais réellement contrôlée : la session qui vient de traduire valide ce qu’elle a produit. La relecture est confiée à un sous-agent au contexte vierge, qui ne voit que le source, la traduction, le glossaire et le contexte.
+
+### 10.1 Quand
+
+Selon la destination déterminée en 1.1 : obligatoire en mode `polyglots` et en mode `admin-client`, sur demande sinon. Aussi déclenchable seul sur une traduction existante quand l’utilisateur demande de « relire », « vérifier » ou « valider » une traduction.
+
+### 10.2 Comment invoquer
+
+Dispatcher l’agent `wp-fr-translation-reviewer` avec un prompt contenant :
+
+1. le mode : `polyglots` ou `admin-client` ;
+2. le source anglais et la traduction française (inline, deux fichiers alignés ligne à ligne, ou un `.po`) ;
+3. le contexte : nom de l’extension ou du thème, type de chaînes (UI, readme, notice), contraintes de longueur, nom du projet client si un glossaire projet existe (section 9).
+
+L’agent lance d’abord le contrôle mécanique `scripts/check_fr.py`, puis relit le sens. Il ne corrige rien, il renvoie un verdict `CONFORME` ou `NON CONFORME` et un tableau des écarts avec la règle ou l’entrée de glossaire citée.
+
+### 10.3 Après le verdict
+
+- `NON CONFORME` : corriger chaque écart bloquant, redispatcher l’agent une seule fois. Si des bloquants subsistent, livrer quand même en listant ce qui reste et pourquoi (désaccord de contexte, terme à arbitrer avec l’utilisateur).
+- `CONFORME` : livrer avec les choix non évidents validés par l’agent.
+- Dans les deux cas, joindre le rapport de relecture à la livraison. Ne jamais livrer une traduction `polyglots` sans rapport.
+
+### 10.4 Contrôle mécanique seul
+
+Utilisable directement, sans agent, pour un premier passage rapide :
+
+```bash
+PYTHONIOENCODING=utf-8 python ~/.claude/skills/wp-fr-typo/scripts/check_fr.py --source en.txt --target fr.txt --mode polyglots
+PYTHONIOENCODING=utf-8 python ~/.claude/skills/wp-fr-typo/scripts/check_fr.py --po fichier.po --mode admin-client --project-glossary .claude/wp-fr-typo/memory/glossaire-<projet>.md
+```
+
+Couvre apostrophes, points de suspension, espaces insécables, guillemets, termes interdits, tutoiement, variables gettext, balises HTML et présence des termes du glossaire. Ne couvre pas le sens : un contresens ne sera vu que par l’agent.
