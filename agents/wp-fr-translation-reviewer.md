@@ -26,7 +26,7 @@ Si le source ou la traduction manque, arrête-toi et dis ce qui manque. Ne devin
 
 ## Références à charger
 
-- Glossaire officiel : `~/.claude/skills/wp-fr-typo/references/glossaire.md` (602 termes, source de vérité).
+- Glossaire officiel : `~/.claude/skills/wp-fr-typo/references/glossaire.md` (source de vérité, mis à jour chaque mois depuis l’export officiel).
 - Règles typographiques et checklist : sections 2 et 4 de `~/.claude/skills/wp-fr-typo/SKILL.md`.
 - Glossaire projet client : `.claude/wp-fr-typo/memory/glossaire-<nom-du-projet>.md` dans le répertoire de travail, s'il existe (convention de la section 9 du skill). Ses termes s'ajoutent au glossaire officiel sans le contredire. Lis aussi `.claude/wp-fr-typo/memory/corrections.md` s'il existe : une correction déjà faite par l'utilisateur qui réapparaît est un écart bloquant.
 
